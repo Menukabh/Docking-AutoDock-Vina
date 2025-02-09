@@ -9,11 +9,12 @@ Aminoacid_seqeunce_was_typed
 
 PEP-FOLD3 gives different 3D structure in PDB format after uploading amino acid sequences. One of the 3D format could be saved for docking. 
 The format saved in PEP-FOLD3 cannot  be directly converted to sdf format in babel. So, convert it first to the PDB format in pymol.
-Load the struture generated in PEP-FOLD3 and convert it to proper PDB format using command 
+Load the struture generated in PEP-FOLD3 and convert it to proper PDB format using the following command 
 
-### PyMOL Commands for Visualization
+### Preparation of Ligand
 
 ```python
+# PyMOL Command for changing the pdb file generated from PEP-FOLD to proper PDB file
 # Load a PDB file
 load my_protein.pdb
 save PN5.pdb
