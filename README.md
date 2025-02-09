@@ -1,9 +1,10 @@
-# Docking-AutoDock-Vina
-## Dock PN3 and PN5 using Autodock-Vina
-Reference: https://github.com/pritampanda15/Drug-Designing/blob/main/grid_generation_vina-main/grid.py
+### Basic Docking using AutoDock-Vina
+## Dock PN3 and PN5 peptides using Autodock-Vina
+Reference: https://autodock-vina.readthedocs.io/en/latest/docking_basic.html
+https://github.com/pritampanda15/Drug-Designing/blob/main/grid_generation_vina-main/grid.py
 
 The structure of PN3 and PN5 peptides were generated in PEP-FOLD 3.5: https://mobyle.rpbs.univ-paris-diderot.fr/cgi-bin/portal.py#forms::PEP-FOLD3
-To get the structure: 
+To get the structure in PEP-FOLD, the seqeunce should be in fasta format
 > PN3
 Aminoacid_seqeunce_was_typed
 
@@ -33,9 +34,14 @@ python scripts/prepare_ligand.py
 ```
 
 Download the PDB format of the receptor from the PDB website "https://www.rcsb.org/"
-##For blind docking prepare the grid box for the receptor using command grid.py
+### Preparation of Receptor
+##For blind docking prepare the grid box for the receptor using command
 
-##Once the grid box is generated use the command to prepare the receptor. THis will generate the grid box and the pdbqt file of the recpetor
+```python
+python grid.py
+```
+
+##Once the grid box is generated use the command to prepare the receptor. This will generate the grid box and the pdbqt file of the recpetor used for docking
 
 ##Perfrom docking using the Autodock Vina
 ##The output of the autodock Vina would be Binding affinities, RMSD and the different poses of ligand
