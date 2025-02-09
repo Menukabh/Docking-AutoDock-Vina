@@ -27,3 +27,4 @@ Download the receptor from the PDB website "https://www.rcsb.org/"
 ##Once the grid box is generated use the command to prepare the receptor. THis will generate the grid box and the pdbqt file of the recpetor
 
 ##Perfrom docking using the Autodock Vina
+##The output of the autodock Vina would be Binding affinities, RMSD and the different poses of ligand
