@@ -1,11 +1,11 @@
 ### Basic Docking using AutoDock-Vina
-## Dock PN3 and PN5 peptides using Autodock-Vina
+## Dock small peptides to the receptors using Autodock-Vina
 Reference: https://autodock-vina.readthedocs.io/en/latest/docking_basic.html
 https://github.com/pritampanda15/Drug-Designing/blob/main/grid_generation_vina-main/grid.py
 
-The structure of PN3 and PN5 peptides were generated in PEP-FOLD 3.5: https://mobyle.rpbs.univ-paris-diderot.fr/cgi-bin/portal.py#forms::PEP-FOLD3
+The structure of small peptides were generated in PEP-FOLD 3.5: https://mobyle.rpbs.univ-paris-diderot.fr/cgi-bin/portal.py#forms::PEP-FOLD3
 To get the structure in PEP-FOLD, the seqeunce should be in fasta format
->PN3
+>Peptide
 Aminoacid_seqeunce_was_typed
 
 PEP-FOLD3 gives different 3D structure in PDB format after uploading amino acid sequences. One of the 3D format could be saved for docking. 
@@ -41,7 +41,7 @@ Download the PDB format of the receptor from the PDB website "https://www.rcsb.o
 python grid.py
 ```
 
-##Once the grid box is generated use the command to prepare the receptor. This will generate the grid box and the pdbqt file of the recpetor used for docking.
+##Once the grid box is generated use the command to prepare the receptor. Below command will generate the text file with the grid box and the pdbqt file of the recpetor used for docking.
 
 The dimension of the grid box generated above will be used as a box size and box center.
 ```python
