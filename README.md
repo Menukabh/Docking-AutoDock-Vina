@@ -54,4 +54,4 @@ mk_prepare_receptor.py -i qs_5/ygfb/ygfb.pdb -o qs_5/ygfb/ygfb -p -v \
 sbatch docking_P2_yejm.sh
 ```
 
-##The output of the autodock Vina would be Binding affinities, RMSD and the different poses of ligand
+##The output of the autodock Vina will be Binding affinities, RMSD values and the different poses of ligand
