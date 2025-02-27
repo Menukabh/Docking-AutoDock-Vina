@@ -44,11 +44,14 @@ python grid.py
 ##Once the grid box is generated use the command to prepare the receptor. This will generate the grid box and the pdbqt file of the recpetor used for docking.
 
 The dimension of the grid box generated above will be used as a box size and box center.
+```python
 mk_prepare_receptor.py -i qs_5/ygfb/ygfb.pdb -o qs_5/ygfb/ygfb -p -v \
 --box_size 36.069 29.951 35.375 --box_center -3.7934995 3.2364998 -1.8455005
-
+```
 
 ##Perform docking using the Autodock Vina
+```bash
 sbatch docking_P2_yejm.sh
+```
 
 ##The output of the autodock Vina would be Binding affinities, RMSD and the different poses of ligand
